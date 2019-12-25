@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #2196f3;
+}
+.page-header{
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 0 0;
+  border-bottom: 1px solid rgba(49, 49, 49, 0.33);
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid rgba(49, 49, 49, 0.33);
+  padding-left: 30px;
+}
+.header-left span{
+  color: #041861;
+}
+.logo{
+  display: block;
+  height: 48px;
+  margin-right: 25px;
+}
+.header-right{
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid rgba(49, 49, 49, 0.33);
+  text-align: center;
+  line-height: 40px;
+}
+.header-right:hover{
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.logout{
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.page-mainer{
+  display: flex;
+}
+.nav-list{
+  width: 300px;
+  padding: 20px 30px;
+  border-right: 1px solid rgba(49, 49, 49, 0.33);
+  flex-shrink: 0;
+}
+.nav-item{
+  display: block;
+  margin-bottom: 40px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+.nav-item:hover{
+  color: #2196f3;
+}
+.nav-item.active{
+  color: #2196f3;
+}
+.nav-item.article-manage::after{
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(49, 49, 49, 0.33);
+  transform: translate(-50%, -50%) rotate(45deg);
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  border-left: none;
+  border-top: none;
+  transition-duration: .5s;
+}
+.article-manage.active::after{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.article-list a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px 0 20px 15px;
+  display: block;
+}
+.article-list a:hover{
+  color: #2196f3;
+}
+.article-list{
+  display: none;
+}
+.article-list.active{
+  display: block;
+}
+.page-content{
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgba(49, 49, 49, 0.33);
+}
+.content-container{
+  width: 100%;
+  height: 730px;
+  padding: 30px;
+}
+.page-footer{
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  bottom: 0;
+  line-height: 55px;
+  text-align: center;
+  border-top: 1px solid rgba(49, 49, 49, 0.33);
+}
